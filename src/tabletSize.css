@@ -1,0 +1,210 @@
+@media only screen and (min-width: 577px) {
+
+    .toolbar {
+        gap: 2.5rem;
+      }
+    .toolbarLight {
+        gap: 2.5rem;
+      }
+
+    /*                  HOME             */
+.homeContainer {
+    max-width: 500px; 
+  }
+
+  .homeTitle {
+    font-size: 18px;
+  }
+  
+  .typeWriter{
+    font-size: 25px;
+    height: 5rem;
+  }
+  
+  .about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    margin: 1rem auto 0rem;
+  }
+  
+  .aDwnTp{
+    font-size: 19px;
+  }
+  
+  .dwnTp {
+    font-size: 18px;
+  }
+  
+  .homeTitle2 {
+    font-size: 18px;
+  }
+  
+  .homeTxt3 {
+    font-size: 20px;
+  }
+  
+  .extras{
+    gap: 2rem;
+  }
+  
+  .xtraBx{
+    font-size: 20px;
+    height: 12rem;
+    max-width: 138px;
+  }
+  
+  .exp{
+    margin-top: -4.2rem;
+  }
+  
+  .xBA1{
+    margin-top: .3rem;
+  }
+  .xBA2{
+    margin-top: 4.3rem;
+  }
+  
+  .fa-medapps{
+    margin-top: -6.1rem;
+  }
+  
+  
+  /*        SKILLS            */
+  
+  .skillsContainer {
+    padding: 1rem;
+  }
+  
+  .skillsTitle{
+
+    font-size: 35px;
+  }
+  
+  .technologies{
+    gap: 2rem;
+    padding: 2rem;
+    max-height: 600px;
+    max-width: 350px;
+  }
+  .technologiesLight{
+    gap: 2rem;
+    padding: 2rem;
+    max-height: 600px;
+    max-width: 350px;
+  }
+  .imgText{
+    font-size: 17px;
+  }
+  
+  .techImgs{
+      height: 60px;
+      width: 60%;
+  }
+
+  /* ============================================================ PROJECTS */
+  
+  .projectTitle1{
+    font-size: 35px;
+  }
+  
+  .gifContainer{
+    max-width: 350px;
+  }
+  .gifContainerLight{
+    max-width: 350px;
+  }
+  
+  
+  .gifBox{
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .frontTitle{
+    font-family: 'Roboto';
+    color: var(--light-mode);
+    margin: .8rem;
+    text-align: center;
+  }
+  
+  .frontTitleLight{
+    font-family: 'Roboto';
+   margin: .8rem;
+    text-align: center;
+  }
+  
+  
+  
+  /* ==========================================================   CONTACT */
+  .contactTitle{
+   font-size: 35px;
+  }
+  
+  .inputbox {
+    width: 300px;
+  }
+  
+  .formText{
+    width: 350px;
+  }
+
+  .lightFormText{
+    width: 350px;
+  }
+  
+  .submit {
+  width: 210px;
+  font-size: 25px;
+  }
+  .submitLight {
+  width: 210px;
+  font-size: 25px;
+  }
+  
+  .contactLink{
+    gap: 3rem;
+  }
+  
+  .fa-whatsapp{
+    font-size: 40px;
+  }
+  
+  .fa-github{
+    font-size: 40px;
+  }
+  
+  .fa-file{
+    font-size: 40px;
+  }
+  
+  .fa-linkedin-in{
+    font-size: 40px;
+  }
+
+  /* ==============================FOOTER ==================== */
+
+  .footer{
+    height: 350px;
+  }
+  
+  .footerTxt{
+    max-width: 400px;
+    font-size: 19px;
+  }
+  
+  .footerLogo{
+    width: 60px;
+    height: 40px;
+  }
+  
+  .menuFoot{
+    max-width: 350px;
+    gap: 2rem;
+  }
+  
+  .menuOpt{
+    font-size: 19px;
+  }
+}

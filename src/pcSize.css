@@ -1,0 +1,360 @@
+@media only screen and (min-width: 1080px) {
+
+
+    /*                  HOME             */
+    .homeContainer {
+        max-width: 800px;
+    }
+
+    .homeTitle {
+        font-size: 23px;
+    }
+
+    .typeWriter {
+        font-size: 35px;
+        height: 7rem;
+    }
+    .typeWriterLight {
+        font-size: 35px;
+        height: 7rem;
+    }
+
+    .about {
+        gap: 1rem;
+    }
+
+    .aDwnTp {
+    font-size: 21px;
+  }
+  
+  .dwnTp {
+    font-size: 21px;
+  }
+
+  .aDwnTp{
+    background-color: transparent;
+    color: var(--yellow);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .dwnTp {
+    width: 10em;
+    position: relative;
+    height: 3.5em;
+    border: 3px ridge var(--yellow);
+    outline: none;
+    background-color: transparent;
+    transition: .5s;
+    border-radius: .5em;
+  }
+  
+  .dwnTp::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: transparent;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  
+  .dwnTp::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: transparent;
+    transition: 0.5s;
+  }
+  
+  .dwnTp:hover::before, button:hover::after {
+    transform: scale(0)
+  }
+  
+  .dwnTp:hover {
+    box-shadow: inset 0px 0px 25px var(--yellow);
+  }
+  
+  .homeTitle2 {
+    font-size: 23px;
+  }
+  .homeTitle2Light {
+    font-size: 23px;
+  }
+  
+  .homeTxt3 {
+    font-size: 25px;
+    font-weight: 400;
+  }
+  
+  .extras{
+    gap: 4rem;
+  }
+  
+  .xtraBx{
+    font-size: 23px;
+    height: 12rem;
+    max-width: 190px;
+  }
+  .xtraBxLight{
+    font-size: 23px;
+    height: 12rem;
+    max-width: 190px;
+  }
+  
+  .exp{
+    margin-top: -2.6rem;
+  }
+  
+  .xBA1{
+    margin-top: 2.8rem;
+  }
+  .xBA2{
+    margin-top: 6.9rem;
+  }
+  
+  .fa-medapps{
+    margin-top: -4rem;
+  }
+  
+  
+  /*        SKILLS            */
+  
+  .skillsContainer {
+    padding: 1rem;
+  }
+  
+  .skillsTitle{
+    font-size: 40px;
+  }
+
+  .technologies{
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    height: 600px;
+    padding: 3.4rem;
+    max-height: 600px;
+    max-width: 1000px;
+    margin-top: 2rem; 
+    overflow-y: hidden;
+  }
+  .technologiesLight{
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    height: 600px;
+    padding: 3.4rem;
+    max-height: 600px;
+    max-width: 1000px;
+    margin-top: 2rem; 
+    overflow-y: hidden;
+   
+  }
+  
+
+  .imgText:hover{
+    transform: scale(1.2);
+    transition: all .5s;
+  }
+
+  .techImgs{
+      height: 45px;
+      width: 65%;
+  }
+ 
+  .list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 2rem;
+    width: 800px;
+    max-width: 1000px;
+    height: 600px;
+  }
+  
+  .secList{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 2rem;
+    background-color: var(--grey);
+    border-radius: 1rem;
+    width:49%
+  }
+  .secListLight{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 2rem;
+    background-color: var(--light-grey);
+    border-radius: 1rem;
+  }
+
+  .listItem{
+    font-size: 28px;
+    margin-left: 1rem;
+  } 
+  
+  .fa-right-long {
+    font-size: 18px;
+    top: 12px;
+    right: 10px;
+}
+  
+  .process{
+    position: relative;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+
+  /* ============================================================ PROJECTS */
+  
+  .projectTitle1{
+    font-size: 40px;
+  }
+  
+  .gifContainer{
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    height: 600px;
+    padding: 3.4rem;
+    max-height: 600px;
+    max-width: 1000px;
+    margin-top: 2rem; 
+    overflow-y: hidden;
+  }
+  .gifContainerLight{
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    height: 600px;
+    padding: 3.4rem;
+    max-height: 600px;
+    max-width: 1000px;
+    margin-top: 2rem; 
+    overflow-y: hidden;
+  }
+
+  .projectTitle{
+    margin-bottom: 1rem;
+  }
+  
+  .gifBox{
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .gif:hover{
+    transform: scale(1.1);
+    transition: all .3s;
+  }
+  
+  .frontTitle{
+    font-family: 'Roboto';
+    margin: 1rem;
+    text-align: center;
+  }
+  
+  .frontTitleLight{
+    font-family: 'Roboto';
+    margin: 1rem;
+    text-align: center;
+  }
+  
+  
+  /* ==========================================================   CONTACT */
+  .contactTitle{
+   font-size: 40px;
+  }
+  
+  .inputbox {
+    width: 400px;
+    font-size: 18px;
+  }
+  
+  .formText{
+    width: 450px;
+    height: 12rem;
+    font-size: 17px;
+    /* background-color: brown; */
+  }
+
+  .lightFormText{
+    width: 450px;
+    height: 12rem;
+    font-size: 17px;
+  }
+  
+  
+  .submit {
+  width: 280px;
+  font-size: 30px;
+  cursor: pointer;
+  }
+  .submitLight {
+  width: 280px;
+  font-size: 30px;
+  cursor: pointer;
+  }
+  
+  .contactLink{
+    gap: 5rem;
+  }
+  
+  .fa-whatsapp{
+    font-size: 45px;
+  }
+  
+  .fa-github{
+    font-size: 45px;
+  }
+  
+  .fa-file{
+    font-size: 45px;
+  }
+  
+  .fa-linkedin-in{
+    font-size: 45px;
+  }
+
+  /* ==============================FOOTER ==================== */
+  
+  .footerTxt{
+    max-width: 400px;
+    font-size: 19px;
+  }
+  
+  .footerLogo{
+    width: 60px;
+    height: 40px;
+  }
+  
+  .menuFoot{
+    max-width: 350px;
+    gap: 2rem;
+  }
+  
+  .menuOpt{
+    font-size: 19px;
+  }
+}
