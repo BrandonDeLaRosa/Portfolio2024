@@ -20,7 +20,7 @@ const Inicio = ({dark}) => {
                         typewriter.typeString("Brandon De La Rosa.")
                         .pauseFor(2000)
                         .deleteAll()
-                            .typeString('Desarrollador web front-end.')
+                            .typeString('Desarrollador web Full-stack.')
                             .pauseFor(2000)
                             .deleteAll()
                             .start();

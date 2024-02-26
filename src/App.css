@@ -54,6 +54,7 @@
   position: fixed;
   left: 3px;
   top: 5px;
+  padding-left: 10px;
 }
 
 .toolbar {
@@ -98,6 +99,41 @@
   color: var(--light-mode);
   font-size: 20px;
 }
+
+
+/* SIDE contactsBar */
+
+.contactsSideBar{
+  background-color: var(--grey);
+  padding: 10px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: fixed;
+  top: 50%;
+  right: 0; 
+  transform: translateY(-50%);
+}
+.contactsSideBarLight{
+  background-color: var(--light-grey);
+  padding: 10px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: fixed;
+  top: 50%;
+  right: 0; 
+  transform: translateY(-50%);
+}
+
 
 
 /*                  HOME             */
