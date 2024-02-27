@@ -11,14 +11,14 @@ const ParticleBackground = ({ dark }) => {
     ctx = canvas.getContext('2d');
     let width = (canvas.width = window.innerWidth);
     let height = (canvas.height = window.innerHeight);
-    const particleCount = 100;
+    const particleCount = 60;
 
     for (let i = 0; i < particleCount; i++) {
       particles.push({
         x: Math.random() * width,
         y: Math.random() * height,
-        vx: Math.random() - 0.1, // Reducir la velocidad horizontal
-        vy: Math.random() - 0.1, // Reducir la velocidad vertical
+        vx: Math.random() - 0.5, // Reducir la velocidad horizontal
+        vy: Math.random() - 0.5, // Reducir la velocidad vertical
         radius: Math.random() * .1,
         color: dark ? "darkGray" : "gray",
       });
@@ -76,7 +76,7 @@ const ParticleBackground = ({ dark }) => {
     return () => {
       window.removeEventListener('resize', resizeHandler);
     };
-  }, [dark]); // Agrega dark como dependencia si cambia dinámicamente
+  }, []); // Agrega dark como dependencia si cambia dinámicamente
 
   return <canvas ref={canvasRef} className="particle-canvas"></canvas>;
 };

@@ -10,20 +10,22 @@ const Contacto = ({ dark }) => {
     const form = useRef();
 
     const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs.sendForm('service_mxvrvg8', 'template_gvywpeh', form.current, 'QaoZuJq5ETT2r1MbN')
-        .then((result) => {
-            console.log(result.text);
-            alert("Su mensaje fue enviado exitosamente.")
-        }, (error) => {
-            console.log(error.text);
-            alert("Error, su mensaje no fue enviado.")
-        });
-        setName("")
-        setEmail("")
-        setMessage("")
-    }; 
+        e.preventDefault();
+      
+        emailjs.sendForm('service_mxvrvg8', 'template_gvywpeh', form.current, 'QaoZuJq5ETT2r1MbN')
+          .then((result) => {
+              console.log(result.text);
+              alert("Su mensaje fue enviado exitosamente.")
+          }, (error) => {
+              console.log(error.text);
+              alert("Error, su mensaje no fue enviado.")
+          });
+      
+        setName("");
+        setEmail("");
+        setMessage("");
+      };
+      
     return (
         <form className='contactContainer' id='contact' ref={form} onSubmit={sendEmail}>
             <h1 className={dark? 'contactTitle':'contactTitleLight'}>Contactame</h1>

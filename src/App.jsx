@@ -48,7 +48,6 @@ function App() {
 
   return (
     <div className={darkTheme ? "dark-mode" : "light-mode"}>
-
       <ParticleBackground dark={darkTheme} />
       <Link className='lightLogo' to='home' smooth={true} duration={1000}><img className='logo' src={logo} alt="logo" /></Link>
 
@@ -74,12 +73,11 @@ function App() {
         <Link className='toolbarElements' to='contact' smooth={true} duration={1000}><i id={toolsColor ? "light" : "dark"} class="fa-solid fa-address-card"></i></Link>
       </div>
 
-      <section className={darkTheme? 'contactsSideBar' : 'contactsSideBarLight'} id={sideBarVisible ? "" : { display: "none" }}
- >
-        <a href="https://www.linkedin.com/in/brandon-de-la-rosa-3b0870259/" target="_blank"><h6></h6><i class="fa-brands fa-linkedin-in"></i></a>
-        <a download="Cv BrandonDeLaRosa" href={cv}><i class="fa-regular fa-file"></i></a>
-        <a href="https://github.com/BrandonDeLaRosa" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://wa.me/5522979911?text=Hola%20me%20interesa%20ponerme%20en%20contacto%20contigo. " target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <section className={darkTheme? 'contactsSideBar' : 'contactsSideBarLight'} id={sideBarVisible ? "" : { display: "none" }}>
+        <a href="https://www.linkedin.com/in/brandon-de-la-rosa-3b0870259/" target="_blank"><h6></h6><i class="fa-brands fa-linkedin-in" id='contactsLink'></i></a>
+        <a download="Cv BrandonDeLaRosa" href={cv}><i class="fa-regular fa-file" id='contactsLink'></i></a>
+        <a href="https://github.com/BrandonDeLaRosa" target="_blank"><i class="fa-brands fa-github" id='contactsLink'></i></a>
+        <a href="https://wa.me/5522979911?text=Hola%20me%20interesa%20ponerme%20en%20contacto%20contigo. " target="_blank"><i class="fa-brands fa-whatsapp" id='contactsLink'></i></a>
       </section>
 
     </div>

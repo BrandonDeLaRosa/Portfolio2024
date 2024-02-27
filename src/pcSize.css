@@ -1,43 +1,80 @@
 @media only screen and (min-width: 1080px) {
+  /* SideBar contact */
 
+  .contactsSideBar {
+    background-color: var(--grey);
+    padding: 10px;
+    border-radius: 1rem;
+    flex-direction: column;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin: 10px;
+  }
+  .contactsSideBarLight {
+    background-color: var(--light-grey);
+    padding: 10px;
+    border-radius: 1rem;
+    flex-direction: column;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 10px;
+  }
 
-    /*                  HOME             */
-    .homeContainer {
-        max-width: 800px;
-    }
+  #contactsLink {
+    font-size: 29px;
+  }
 
-    .homeTitle {
-        font-size: 23px;
-    }
+  /*                  HOME             */
+  .homeContainer {
+    max-width: 800px;
+  }
 
-    .typeWriter {
-        font-size: 35px;
-        height: 7rem;
-    }
-    .typeWriterLight {
-        font-size: 35px;
-        height: 7rem;
-    }
+  .homeTitle {
+    font-size: 23px;
+  }
 
-    .about {
-        gap: 1rem;
-    }
+  .typeWriter {
+    font-size: 35px;
+    height: 7rem;
+  }
+  .typeWriterLight {
+    font-size: 35px;
+    height: 7rem;
+  }
 
-    .aDwnTp {
+  .about {
+    gap: 1rem;
+  }
+
+  .aDwnTp {
     font-size: 21px;
   }
-  
+
   .dwnTp {
     font-size: 21px;
   }
 
-  .aDwnTp{
+  .aDwnTp {
     background-color: transparent;
     color: var(--yellow);
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
-  
+
   .dwnTp {
     width: 10em;
     position: relative;
@@ -45,10 +82,10 @@
     border: 3px ridge var(--yellow);
     outline: none;
     background-color: transparent;
-    transition: .5s;
-    border-radius: .5em;
+    transition: 0.5s;
+    border-radius: 0.5em;
   }
-  
+
   .dwnTp::after {
     content: "";
     position: absolute;
@@ -60,7 +97,7 @@
     transition: 0.5s;
     transform-origin: center;
   }
-  
+
   .dwnTp::before {
     content: "";
     transform-origin: center;
@@ -72,69 +109,69 @@
     background-color: transparent;
     transition: 0.5s;
   }
-  
-  .dwnTp:hover::before, button:hover::after {
-    transform: scale(0)
+
+  .dwnTp:hover::before,
+  button:hover::after {
+    transform: scale(0);
   }
-  
+
   .dwnTp:hover {
     box-shadow: inset 0px 0px 25px var(--yellow);
   }
-  
+
   .homeTitle2 {
     font-size: 23px;
   }
   .homeTitle2Light {
     font-size: 23px;
   }
-  
+
   .homeTxt3 {
     font-size: 25px;
     font-weight: 400;
   }
-  
-  .extras{
+
+  .extras {
     gap: 4rem;
   }
-  
-  .xtraBx{
+
+  .xtraBx {
     font-size: 23px;
     height: 12rem;
     max-width: 190px;
   }
-  .xtraBxLight{
+  .xtraBxLight {
     font-size: 23px;
     height: 12rem;
     max-width: 190px;
   }
-  
-  .exp{
+
+  .exp {
     margin-top: -2.6rem;
   }
-  
-  .xBA1{
+
+  .xBA1 {
     margin-top: 2.8rem;
   }
-  .xBA2{
+  .xBA2 {
     margin-top: 6.9rem;
   }
-  
-  .fa-medapps{
+
+  .fa-medapps {
     margin-top: -4rem;
   }
-  
-  
+
   /*        SKILLS            */
-  
+
   .skillsContainer {
     padding: 1rem;
   }
-  
-  .skillsTitle{
+
+  .skillsTitle {
     font-size: 40px;
   }
 
-  .technologies{
+  .technologies {
     display: flex;
     width: 1000px;
     justify-content: center;
@@ -144,10 +181,10 @@
     padding: 3.4rem;
     max-height: 600px;
     max-width: 1000px;
-    margin-top: 2rem; 
+    margin-top: 2rem;
     overflow-y: hidden;
   }
-  .technologiesLight{
+  .technologiesLight {
     display: flex;
     width: 1000px;
     justify-content: center;
@@ -157,23 +194,21 @@
     padding: 3.4rem;
     max-height: 600px;
     max-width: 1000px;
-    margin-top: 2rem; 
+    margin-top: 2rem;
     overflow-y: hidden;
-   
   }
-  
 
-  .imgText:hover{
+  .imgText:hover {
     transform: scale(1.2);
-    transition: all .5s;
+    transition: all 0.5s;
   }
 
-  .techImgs{
-      height: 45px;
-      width: 65%;
+  .techImgs {
+    height: 45px;
+    width: 65%;
   }
- 
-  .list{
+
+  .list {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -184,51 +219,50 @@
     max-width: 1000px;
     height: 600px;
   }
-  
-  .secList{
+
+  .secList {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 0.5rem;
     padding: 2rem;
     background-color: var(--grey);
     border-radius: 1rem;
-    width:49%
+    width: 49%;
   }
-  .secListLight{
+  .secListLight {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 0.5rem;
     padding: 2rem;
     background-color: var(--light-grey);
     border-radius: 1rem;
   }
 
-  .listItem{
+  .listItem {
     font-size: 28px;
     margin-left: 1rem;
-  } 
-  
+  }
+
   .fa-right-long {
     font-size: 18px;
     top: 12px;
     right: 10px;
-}
-  
-  .process{
+  }
+
+  .process {
     position: relative;
     letter-spacing: 2px;
     font-weight: bold;
     font-size: 12px;
   }
-  
 
   /* ============================================================ PROJECTS */
-  
-  .projectTitle1{
+
+  .projectTitle1 {
     font-size: 40px;
   }
-  
-  .gifContainer{
+
+  .gifContainer {
     display: flex;
     width: 1000px;
     justify-content: center;
@@ -238,10 +272,10 @@
     padding: 3.4rem;
     max-height: 600px;
     max-width: 1000px;
-    margin-top: 2rem; 
+    margin-top: 2rem;
     overflow-y: hidden;
   }
-  .gifContainerLight{
+  .gifContainerLight {
     display: flex;
     width: 1000px;
     justify-content: center;
@@ -251,110 +285,108 @@
     padding: 3.4rem;
     max-height: 600px;
     max-width: 1000px;
-    margin-top: 2rem; 
+    margin-top: 2rem;
     overflow-y: hidden;
   }
 
-  .projectTitle{
+  .projectTitle {
     margin-bottom: 1rem;
   }
-  
-  .gifBox{
+
+  .gifBox {
     width: 100%;
     max-width: 400px;
   }
 
-  .gif:hover{
+  .gif:hover {
     transform: scale(1.1);
-    transition: all .3s;
+    transition: all 0.3s;
   }
-  
-  .frontTitle{
-    font-family: 'Roboto';
+
+  .frontTitle {
+    font-family: "Roboto";
     margin: 1rem;
     text-align: center;
   }
-  
-  .frontTitleLight{
-    font-family: 'Roboto';
+
+  .frontTitleLight {
+    font-family: "Roboto";
     margin: 1rem;
     text-align: center;
   }
-  
-  
+
   /* ==========================================================   CONTACT */
-  .contactTitle{
-   font-size: 40px;
+  .contactTitle {
+    font-size: 40px;
   }
-  
+
   .inputbox {
     width: 400px;
     font-size: 18px;
   }
-  
-  .formText{
+
+  .formText {
     width: 450px;
     height: 12rem;
     font-size: 17px;
     /* background-color: brown; */
   }
 
-  .lightFormText{
+  .lightFormText {
     width: 450px;
     height: 12rem;
     font-size: 17px;
   }
-  
-  
+
   .submit {
-  width: 280px;
-  font-size: 30px;
-  cursor: pointer;
+    width: 280px;
+    font-size: 30px;
+    cursor: pointer;
   }
   .submitLight {
-  width: 280px;
-  font-size: 30px;
-  cursor: pointer;
+    width: 280px;
+    font-size: 30px;
+    cursor: pointer;
   }
-  
-  .contactLink{
+
+  .contactLink {
     gap: 5rem;
   }
-  
-  .fa-whatsapp{
+
+  .fa-whatsapp {
     font-size: 45px;
   }
-  
-  .fa-github{
+
+  .fa-github {
     font-size: 45px;
   }
-  
-  .fa-file{
+
+  .fa-file {
     font-size: 45px;
   }
-  
-  .fa-linkedin-in{
+
+  .fa-linkedin-in {
     font-size: 45px;
   }
 
   /* ==============================FOOTER ==================== */
-  
-  .footerTxt{
+
+  .footerTxt {
     max-width: 400px;
     font-size: 19px;
   }
-  
-  .footerLogo{
+
+  .footerLogo {
     width: 60px;
     height: 40px;
   }
-  
-  .menuFoot{
+
+  .menuFoot {
     max-width: 350px;
     gap: 2rem;
   }
-  
-  .menuOpt{
+
+  .menuOpt {
     font-size: 19px;
   }
 }
