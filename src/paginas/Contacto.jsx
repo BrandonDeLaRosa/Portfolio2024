@@ -9,22 +9,32 @@ const Contacto = ({ dark }) => {
 
     const form = useRef();
 
-    const sendEmail = (e) => {
+    const sendEmail = async (e) => {
         e.preventDefault();
-      
-        emailjs.sendForm('service_mxvrvg8', 'template_gvywpeh', form.current, 'QaoZuJq5ETT2r1MbN')
-          .then((result) => {
-              console.log(result.text);
-              alert("Su mensaje fue enviado exitosamente.")
-          }, (error) => {
-              console.log(error.text);
-              alert("Error, su mensaje no fue enviado.")
-          });
-      
+
+        try {
+            const formData = new FormData(form.current);
+            await axios.post('https://api.emailjs.com/api/v1.0/email/send-form', formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                },
+                params: {
+                    service_id: 'service_qdqbjoa',
+                    template_id: 'template_gvywpeh',
+                    user_id: 'QaoZuJq5ETT2r1MbN'
+                }
+            });
+            console.log("Email sent successfully");
+            alert("Your message was sent successfully");
+        } catch (error) {
+            console.error("Error sending email:", error);
+            alert("Error, please try again.");
+        }
+
         setName("");
         setEmail("");
         setMessage("");
-      };
+    };
       
     return (
         <form className='contactContainer' id='contact' ref={form} onSubmit={sendEmail}>
