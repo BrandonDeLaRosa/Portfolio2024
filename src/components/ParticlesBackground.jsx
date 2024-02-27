@@ -11,7 +11,7 @@ const ParticleBackground = ({ dark }) => {
     ctx = canvas.getContext('2d');
     let width = (canvas.width = window.innerWidth);
     let height = (canvas.height = window.innerHeight);
-    const particleCount = 60;
+    const particleCount = 100;
 
     for (let i = 0; i < particleCount; i++) {
       particles.push({
