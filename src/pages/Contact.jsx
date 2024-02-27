@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import cv from '../components/cv.pdf';
-import axios from 'axios';
+import emailjs from '@emailjs/browser';
 
 const Contact = ({ dark }) => {
     const [name, setName] = useState("");
@@ -11,19 +11,8 @@ const Contact = ({ dark }) => {
 
     const sendEmail = async (e) => {
         e.preventDefault();
-
         try {
-            const formData = new FormData(form.current);
-            await axios.post('https://api.emailjs.com/api/v1.0/email/send-form', formData, {
-                headers: {
-                    'Content-Type': 'multipart/form-data'
-                },
-                params: {
-                    service_id: 'service_qdqbjoa',
-                    template_id: 'template_gvywpeh',
-                    user_id: 'QaoZuJq5ETT2r1MbN'
-                }
-            });
+            await emailjs.sendForm('service_qdqbjoa', 'template_gvywpeh', form.current, 'QaoZuJq5ETT2r1MbN');
             console.log("Email sent successfully");
             alert("Your message was sent successfully");
         } catch (error) {
