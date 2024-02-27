@@ -11,7 +11,15 @@ const ParticleBackground = ({ dark }) => {
     ctx = canvas.getContext('2d');
     let width = (canvas.width = window.innerWidth);
     let height = (canvas.height = window.innerHeight);
-    const particleCount = 100;
+    let particleCount;
+
+    if (width <= 768) {
+      particleCount = 30; // Mobile size
+    } else if (width <= 1024) {
+      particleCount = 50; // Tablet size
+    } else {
+      particleCount = 70; // Desktop and larger
+    }
 
     for (let i = 0; i < particleCount; i++) {
       particles.push({
@@ -76,7 +84,7 @@ const ParticleBackground = ({ dark }) => {
     return () => {
       window.removeEventListener('resize', resizeHandler);
     };
-  }, []); // Agrega dark como dependencia si cambia dinámicamente
+  }, []); // dark es una dependencia
 
   return <canvas ref={canvasRef} className="particle-canvas"></canvas>;
 };
