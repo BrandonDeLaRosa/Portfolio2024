@@ -19,7 +19,7 @@ const Contact = ({ dark }) => {
                     'Content-Type': 'multipart/form-data'
                 },
                 params: {
-                    service_id: 'service_mxvrvg8',
+                    service_id: 'service_qdqbjoa',
                     template_id: 'template_gvywpeh',
                     user_id: 'QaoZuJq5ETT2r1MbN'
                 }
