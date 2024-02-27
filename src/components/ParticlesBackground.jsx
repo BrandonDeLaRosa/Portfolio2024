@@ -19,7 +19,7 @@ const ParticleBackground = ({ dark }) => {
         y: Math.random() * height,
         vx: Math.random() - 0.5, // Reducir la velocidad horizontal
         vy: Math.random() - 0.5, // Reducir la velocidad vertical
-        radius: Math.random() * .1,
+        radius: Math.random() * 2 + 1,
         color: dark ? "darkGray" : "gray",
       });
     }
